@@ -1,0 +1,46 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pads, .controls {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.controls {
+  margin-bottom: 20px;
+  justify-content: flex-end;
+}
+
+.controls button {
+  width: 130px;
+  margin: 5px;
+}
+
+.controls button:last-child {
+  margin-right: 0;
+}
+
+.pads > div {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pads button, input { width: 120px; }
+
+.pads button {
+  margin: 0 0 25px 0;
+  height: 100px;
+  transition: transform 40ms ease-out;
+}
+
+.pads button.active {
+  transform: scale3d(1.2, 1.2, 1);
+}

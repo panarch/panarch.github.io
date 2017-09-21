@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Homework #1 - Beatbox</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link href='./index.css' rel='stylesheet'>
+  <link href='../styles/global.css' rel='stylesheet'>
+</head>
+<body>
+  <h1>HW #1 - Beatbox</h1>
+  <div class='controls'>
+    <button id='play-demo'>Play (Demo)</button>
+    <button id='play' disabled>Play</button>
+    <button id='record'>Record</button>
+  </div>
+  <div class='pads'>
+    <div id='s1'>
+      <button>
+        Snare<br />(d, c)
+      </button>
+      <input type='range' min='-24' max='0' value='-12' />
+      <p>-12dB</p>
+    </div>
+    <div id='s2'>
+      <button>
+        Kick 1<br />(f, v)
+      </button>
+      <input type='range' min='-24' max='0' value='-12' />
+      <p>-12dB</p>
+    </div>
+    <div id='s3'>
+      <button>
+        Kick 2<br />(j, n)
+      </button>
+      <input type='range' min='-24' max='0' value='-12' />
+      <p>-12dB</p>
+    </div>
+    <div id='s4'>
+      <button>
+        Hihat<br />(k, m)
+      </button>
+      <input type='range' min='-24' max='0' value='-12' />
+      <p>-12dB</p>
+    </div>
+  </div>
+  <script src='./index.js'></script>
+</body>
+</html>
