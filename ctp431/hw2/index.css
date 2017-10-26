@@ -6,6 +6,24 @@ body {
   justify-content: center;
 }
 
+.controls {
+  display: flex;
+  flex-direction: row;
+  width: 640px;
+}
+
+.controls:first-child {
+  justify-content: space-between;
+}
+
+.controls > * {
+  margin: 5px;
+}
+
+.controls > *:first-child {
+  margin-left: 0;
+}
+
 .container {
   will-change: background-color;
   margin: 10px;

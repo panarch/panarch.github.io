@@ -8,21 +8,41 @@
   <link href='../styles/global.css' rel='stylesheet'>
 </head>
 <body>
-  <h3>HW #2 - Music Visualizer</h3>
-	<button id="demoAudio"> Demo Audio Play </button>
-  <button id="micInput"> Mic On </button> 
+  <div class='controls'>
+    <h3>HW #2 - Music Visualizer</h3>
+    <a href='https://panarch.github.io/ctp431/hw2/README.md'
+        target='_blank'
+        rel='noopener noreferrer'>
+      Click me! (description)
+    </a>
+  </div>
+  <div class='controls'>
+    <select value='Piano_Store.mp3'>
+      <option value='Piano_Store.mp3'>Piano Store</option>
+      <option value='Allemande.mp3'>Allemande</option>
+      <option value='Fire_Breather.mp3'>Fire Breather</option>
+      <option value='Patriotic_March.mp3'>Patriotic March</option>
+      <option value='Movin.mp3'>Movin</option>
+    </select>
+    <input type='file' accept='audio/*' />
+  </div>
+  <div class='controls'>
+    <button class='demo-button'>Demo Audio Play</button>
+    <button class='file-button' disabled>File Audio Play</button>
+    <button class='mic-button'>Mic On</button>
+  </div>
   <div class='container'>
     <div class='box'>
-      <div>10</div>
-      <div>20</div>
-      <div>30</div>
-      <div>40</div>
-      <div>-50</div>
-      <div>60</div>
-      <div>70</div>
-      <div>80</div>
-      <div>90</div>
-      <div>-20</div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
   </div>
   <script src='./index.js'></script>
