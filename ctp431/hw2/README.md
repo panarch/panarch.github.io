@@ -30,3 +30,6 @@ Level 6: Nothing
 Level 7: Nothing  
 Level 8: `bars` transform origin velocity, bigger sounds => faster `bars` moving in the `box`  
 Level 9: `box` rotating direction(clockwise/counterclockwise), compare with prev sound level, if sound changes more than 20dB, then toggle!  
+
+#### Tweaks - interaction
+Move your mouse over the `bars`, it shows dB values on the bar.
