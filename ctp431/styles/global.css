@@ -77,3 +77,20 @@ input[type='range']::-webkit-slider-thumb {
 input[type='range']:focus::-webkit-slider-runnable-track {
   background-color: var(--background-color);
 }
+
+input[type='file'] {
+  padding: 10px 0;
+}
+
+select {
+  padding: 10px 15px;
+  border: 1px solid var(--border-color);
+  font-size: inherit;
+  font-family: inherit;
+  background-color: inherit;
+  --webkit-appearance: none;
+}
+
+a {
+  color: inherit;
+}
