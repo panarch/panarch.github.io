@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sound Maze - CTP431 Final Project</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link href='./index.css' rel='stylesheet'>
+  <link href='../styles/global.css' rel='stylesheet'>
+  <script src='./Tone.min.js'></script>
+</head>
+<body>
+  <div class='header'>
+    <h3>Sound Maze - CTP431 Final Project</h3>
+    <a href='https://github.com/panarch/panarch.github.io/tree/master/ctp431/final'
+        target='_blank'
+        rel='noopener noreferrer'>
+      Click me! (description)
+    </a>
+  </div>
+  <div class='board'>
+  </div>
+  <div class='controls'>
+    <div class='info'>
+      <div>
+        <div class='slot start'></div>
+        <p>Starting</p>
+      </div>
+      <div>
+        <div class='slot end'></div>
+        <p>Goal</p>
+      </div>
+      <div>
+        <div class='slot wall'></div>
+        <p>Wall</p>
+      </div>
+      <div>
+        <div class='slot hole'></div>
+        <p>Hole</p>
+      </div>
+      <div>
+        <div class='slot trap'></div>
+        <p>Trap</p>
+      </div>
+    </div>
+    <div class='keys'>
+      <p>W - Move Forward</p>
+      <p>S - Move Backward</p>
+      <p>A - Turn Left</p>
+      <p>D - Turn Right</p>
+    </div>
+    <div class='spacer'>
+    </div>
+    <div class='buttons'>
+      <p class='message'>Press START and close your eyes</p>
+      <button class='btn-start'>Start</button>
+      <button class='btn-map'>Hide Map</button>
+    </div>
+  </div>
+  <script src='./index.js'></script>
+</body>
+</html>

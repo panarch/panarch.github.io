@@ -1,0 +1,166 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.header {
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.board {
+  position: relative;
+  width: 604px;
+  height: 604px;
+  border: 2px solid #aaa;
+}
+
+.board.hidden {
+  opacity: 0.01;
+}
+
+.slot {
+  position: absolute;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  border: 2px solid white;
+  cursor: pointer;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slot:hover {
+  opacity: 0.7;
+}
+
+.slot:active {
+  opacity: 0.5;
+}
+
+.slot.road {
+  background-color: white;
+}
+
+.slot.wall {
+  border: none;
+  background-color: orange;
+}
+
+.slot.hole {
+  border: none;
+  background-color: #333;
+}
+
+.slot.trap {
+  border-radius: 30%;
+  background-color: purple;
+}
+
+.slot.path {
+}
+
+.slot.start {
+  background-color: blue;
+}
+
+.slot.end {
+  background-color: green;
+}
+
+.player {
+  width: 16px;
+  height: 16px;
+  border-color: red;
+  border-style: solid;
+  border-width: 8px 8px 0 0;
+  border-color: red red transparent transparent;
+  border-radius: 50% 0 50% 0;
+  transform-origin: 50% 50%;
+  transform: rotateZ(-45deg);
+}
+
+.controls {
+  margin-top: 10px;
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+}
+
+.controls > .info, .controls > .keys {
+  margin-right: 10px;
+}
+
+.controls > .info > div {
+  margin: 3px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.controls > .info p {
+  margin: 3px;
+}
+
+.controls > .info .slot {
+  position: relative;
+}
+
+.controls > .keys p {
+  margin: 5px;
+}
+
+.controls > .spacer {
+  flex-grow: 1;
+}
+
+.controls > .buttons {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls > .buttons p {
+  margin: 5px;
+}
+
+.controls button {
+  margin: 5px;
+  width: 100%;
+  height: 50px;
+}
+
+.message {
+  animation-duration: 3s;
+  animation-name: shake;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate3d(0, 0, 0); }
+  2% { transform: translate3d(3px, 0, 0); }
+  4% { transform: translate3d(0, 0, 0); }
+  6% { transform: translate3d(-3px, 0, 0); }
+  8% { transform: translate3d(0, 0, 0); }
+  10% { transform: translate3d(3px, 0, 0); }
+  12% { transform: translate3d(0, 0, 0); }
+  14% { transform: translate3d(-3px, 0, 0); }
+  16% { transform: translate3d(0, 0, 0); }
+  18% { transform: translate3d(3px, 0, 0); }
+  20% { transform: translate3d(0, 0, 0); }
+  22% { transform: translate3d(-3px, 0, 0); }
+  24% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
