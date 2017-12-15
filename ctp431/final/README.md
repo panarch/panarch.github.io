@@ -1,4 +1,5 @@
 ## 2017 CTP431 - Final Project
+Taehoon Moon
 # Sound Maze!
 
 https://panarch.github.io/ctp431/final/
