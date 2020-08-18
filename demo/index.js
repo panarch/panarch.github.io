@@ -52,56 +52,56 @@
 /******/ 	function promiseResolve() { return Promise.resolve(); }
 /******/
 /******/ 	var wasmImportObjects = {
-/******/ 		"../pkg/gluesql_bg.wasm": function() {
+/******/ 		"./node_modules/gluesql/gluesql_bg.wasm": function() {
 /******/ 			return {
 /******/ 				"./gluesql_bg.js": {
 /******/ 					"__wbg_log_420b00aab3401144": function(p0i32,p1i32) {
-/******/ 						return installedModules["../pkg/gluesql_bg.js"].exports["__wbg_log_420b00aab3401144"](p0i32,p1i32);
+/******/ 						return installedModules["./node_modules/gluesql/gluesql_bg.js"].exports["__wbg_log_420b00aab3401144"](p0i32,p1i32);
 /******/ 					},
 /******/ 					"__wbindgen_string_new": function(p0i32,p1i32) {
-/******/ 						return installedModules["../pkg/gluesql_bg.js"].exports["__wbindgen_string_new"](p0i32,p1i32);
+/******/ 						return installedModules["./node_modules/gluesql/gluesql_bg.js"].exports["__wbindgen_string_new"](p0i32,p1i32);
 /******/ 					},
 /******/ 					"__wbg_getItem_ef4345f3e68f429d": function(p0i32,p1i32) {
-/******/ 						return installedModules["../pkg/gluesql_bg.js"].exports["__wbg_getItem_ef4345f3e68f429d"](p0i32,p1i32);
+/******/ 						return installedModules["./node_modules/gluesql/gluesql_bg.js"].exports["__wbg_getItem_ef4345f3e68f429d"](p0i32,p1i32);
 /******/ 					},
 /******/ 					"__wbindgen_object_drop_ref": function(p0i32) {
-/******/ 						return installedModules["../pkg/gluesql_bg.js"].exports["__wbindgen_object_drop_ref"](p0i32);
+/******/ 						return installedModules["./node_modules/gluesql/gluesql_bg.js"].exports["__wbindgen_object_drop_ref"](p0i32);
 /******/ 					},
 /******/ 					"__wbg_setItem_d1f71fd96da3c1a0": function(p0i32,p1i32,p2i32,p3i32) {
-/******/ 						return installedModules["../pkg/gluesql_bg.js"].exports["__wbg_setItem_d1f71fd96da3c1a0"](p0i32,p1i32,p2i32,p3i32);
+/******/ 						return installedModules["./node_modules/gluesql/gluesql_bg.js"].exports["__wbg_setItem_d1f71fd96da3c1a0"](p0i32,p1i32,p2i32,p3i32);
 /******/ 					},
 /******/ 					"__wbg_removeItem_492e533ebb0bcd79": function(p0i32,p1i32) {
-/******/ 						return installedModules["../pkg/gluesql_bg.js"].exports["__wbg_removeItem_492e533ebb0bcd79"](p0i32,p1i32);
+/******/ 						return installedModules["./node_modules/gluesql/gluesql_bg.js"].exports["__wbg_removeItem_492e533ebb0bcd79"](p0i32,p1i32);
 /******/ 					},
 /******/ 					"__wbg_getItem_748ebc40e3fc5b2c": function(p0i32,p1i32) {
-/******/ 						return installedModules["../pkg/gluesql_bg.js"].exports["__wbg_getItem_748ebc40e3fc5b2c"](p0i32,p1i32);
+/******/ 						return installedModules["./node_modules/gluesql/gluesql_bg.js"].exports["__wbg_getItem_748ebc40e3fc5b2c"](p0i32,p1i32);
 /******/ 					},
 /******/ 					"__wbg_setItem_ad8a6e94e1806ecd": function(p0i32,p1i32,p2i32,p3i32) {
-/******/ 						return installedModules["../pkg/gluesql_bg.js"].exports["__wbg_setItem_ad8a6e94e1806ecd"](p0i32,p1i32,p2i32,p3i32);
+/******/ 						return installedModules["./node_modules/gluesql/gluesql_bg.js"].exports["__wbg_setItem_ad8a6e94e1806ecd"](p0i32,p1i32,p2i32,p3i32);
 /******/ 					},
 /******/ 					"__wbg_removeItem_159f19afec09eb48": function(p0i32,p1i32) {
-/******/ 						return installedModules["../pkg/gluesql_bg.js"].exports["__wbg_removeItem_159f19afec09eb48"](p0i32,p1i32);
+/******/ 						return installedModules["./node_modules/gluesql/gluesql_bg.js"].exports["__wbg_removeItem_159f19afec09eb48"](p0i32,p1i32);
 /******/ 					},
 /******/ 					"__wbindgen_json_parse": function(p0i32,p1i32) {
-/******/ 						return installedModules["../pkg/gluesql_bg.js"].exports["__wbindgen_json_parse"](p0i32,p1i32);
+/******/ 						return installedModules["./node_modules/gluesql/gluesql_bg.js"].exports["__wbindgen_json_parse"](p0i32,p1i32);
 /******/ 					},
 /******/ 					"__wbg_new_59cb74e423758ede": function() {
-/******/ 						return installedModules["../pkg/gluesql_bg.js"].exports["__wbg_new_59cb74e423758ede"]();
+/******/ 						return installedModules["./node_modules/gluesql/gluesql_bg.js"].exports["__wbg_new_59cb74e423758ede"]();
 /******/ 					},
 /******/ 					"__wbg_stack_558ba5917b466edd": function(p0i32,p1i32) {
-/******/ 						return installedModules["../pkg/gluesql_bg.js"].exports["__wbg_stack_558ba5917b466edd"](p0i32,p1i32);
+/******/ 						return installedModules["./node_modules/gluesql/gluesql_bg.js"].exports["__wbg_stack_558ba5917b466edd"](p0i32,p1i32);
 /******/ 					},
 /******/ 					"__wbg_error_4bb6c2a97407129a": function(p0i32,p1i32) {
-/******/ 						return installedModules["../pkg/gluesql_bg.js"].exports["__wbg_error_4bb6c2a97407129a"](p0i32,p1i32);
+/******/ 						return installedModules["./node_modules/gluesql/gluesql_bg.js"].exports["__wbg_error_4bb6c2a97407129a"](p0i32,p1i32);
 /******/ 					},
 /******/ 					"__wbindgen_string_get": function(p0i32,p1i32) {
-/******/ 						return installedModules["../pkg/gluesql_bg.js"].exports["__wbindgen_string_get"](p0i32,p1i32);
+/******/ 						return installedModules["./node_modules/gluesql/gluesql_bg.js"].exports["__wbindgen_string_get"](p0i32,p1i32);
 /******/ 					},
 /******/ 					"__wbindgen_throw": function(p0i32,p1i32) {
-/******/ 						return installedModules["../pkg/gluesql_bg.js"].exports["__wbindgen_throw"](p0i32,p1i32);
+/******/ 						return installedModules["./node_modules/gluesql/gluesql_bg.js"].exports["__wbindgen_throw"](p0i32,p1i32);
 /******/ 					},
 /******/ 					"__wbindgen_rethrow": function(p0i32) {
-/******/ 						return installedModules["../pkg/gluesql_bg.js"].exports["__wbindgen_rethrow"](p0i32);
+/******/ 						return installedModules["./node_modules/gluesql/gluesql_bg.js"].exports["__wbindgen_rethrow"](p0i32);
 /******/ 					}
 /******/ 				}
 /******/ 			};
@@ -194,7 +194,7 @@
 /******/
 /******/ 		// Fetch + compile chunk loading for webassembly
 /******/
-/******/ 		var wasmModules = {"0":["../pkg/gluesql_bg.wasm"]}[chunkId] || [];
+/******/ 		var wasmModules = {"0":["./node_modules/gluesql/gluesql_bg.wasm"]}[chunkId] || [];
 /******/
 /******/ 		wasmModules.forEach(function(wasmModuleId) {
 /******/ 			var installedWasmModuleData = installedWasmModules[wasmModuleId];
@@ -204,7 +204,7 @@
 /******/ 				promises.push(installedWasmModuleData);
 /******/ 			else {
 /******/ 				var importObject = wasmImportObjects[wasmModuleId]();
-/******/ 				var req = fetch(__webpack_require__.p + "" + {"../pkg/gluesql_bg.wasm":"46e7ba768f689a9f2e8b"}[wasmModuleId] + ".module.wasm");
+/******/ 				var req = fetch(__webpack_require__.p + "" + {"./node_modules/gluesql/gluesql_bg.wasm":"932b0925ae2c1e48792d"}[wasmModuleId] + ".module.wasm");
 /******/ 				var promise;
 /******/ 				if(importObject instanceof Promise && typeof WebAssembly.compileStreaming === 'function') {
 /******/ 					promise = Promise.all([WebAssembly.compileStreaming(req), importObject]).then(function(items) {
@@ -305,7 +305,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("const gluesql = __webpack_require__.e(/*! import() */ 0).then(__webpack_require__.bind(null, /*! ../pkg/gluesql.js */ \"../pkg/gluesql.js\"));\n\nasync function run() {\n  const { Glue } = await gluesql;\n\n  const sqls = [`\n    CREATE TABLE Test (\n        id INTEGER,\n        msg TEXT,\n        flag BOOLEAN\n    );`,\n    \"INSERT INTO Test (id, msg, flag) VALUES (1, \\\"Hello GlueSQL\\\", false);\",\n    \"INSERT INTO Test (id, msg, flag) VALUES (2, \\\"Good Luck!\\\", true);\",\n    \"SELECT * FROM Test;\",\n    \"SLEE * WIEJF;\",\n    \"SELECT * FROM Something;\",\n  ];\n\n  const db = new Glue(\"memory\");\n  /* other options:\n   *\n   * const db = new Glue(\"localstorage\", \"database-name\");\n   * const db = new Glue(\"sessionstorage\", \"database-name\");\n   */\n\n  const stringify = v => JSON.stringify(v, null, ' ');\n\n  for (sql of sqls) {\n    print({\n      color: 'white',\n      content: `[RUN] ${sql}`,\n    });\n\n    let message;\n\n    try {\n      let result = db.execute(sql)[0];\n\n      message = {\n        color: '#3090F2',\n        content: `[RES] ${stringify(result)}`,\n      };\n    } catch (error) {\n      message = {\n        color: '#f72145',\n        content: `[ERR] ${stringify(error)}`,\n      };\n    }\n\n    print(message);\n    print(' ');\n    print(' ');\n  }\n}\n\nfunction print(message) {\n  const code = document.createElement('code');\n\n  if (message) {\n    const { content, color } = message;\n\n    code.textContent = content;\n    code.style.color = color;\n  }\n\n  document.querySelector('#box').appendChild(code);\n}\n\nrun();\n\n\n//# sourceURL=webpack:///./index.js?");
+eval("// const gluesql = import(\"../../gluesql-js/pkg/gluesql.js\");\nconst gluesql = __webpack_require__.e(/*! import() */ 0).then(__webpack_require__.bind(null, /*! ./node_modules/gluesql/gluesql.js */ \"./node_modules/gluesql/gluesql.js\"));\n// const gluesql = import(\"./pkg/gluesql.js\");\n\nasync function run() {\n  const { Glue } = await gluesql;\n\n  const sqls = [`\n    CREATE TABLE Test (\n        id INTEGER,\n        msg TEXT,\n        flag BOOLEAN\n    );`,\n    \"INSERT INTO Test (id, msg, flag) VALUES (1, \\\"Hello GlueSQL\\\", false);\",\n    \"INSERT INTO Test (id, msg, flag) VALUES (2, \\\"Good Luck!\\\", true);\",\n    \"SELECT * FROM Test;\",\n    \"SLEE * WIEJF;\",\n    \"SELECT * FROM Something;\",\n  ];\n\n  const db = new Glue(\"memory\");\n  /* other options:\n   *\n   * const db = new Glue(\"localstorage\", \"database-name\");\n   * const db = new Glue(\"sessionstorage\", \"database-name\");\n   */\n\n  const stringify = v => JSON.stringify(v, null, ' ');\n\n  for (sql of sqls) {\n    print({\n      color: 'white',\n      content: `[RUN] ${sql}`,\n    });\n\n    let message;\n\n    try {\n      let result = db.execute(sql)[0];\n\n      message = {\n        color: '#3090F2',\n        content: `[RES] ${stringify(result)}`,\n      };\n    } catch (error) {\n      message = {\n        color: '#f72145',\n        content: `[ERR] ${stringify(error)}`,\n      };\n    }\n\n    print(message);\n    print(' ');\n    print(' ');\n  }\n}\n\nfunction print(message) {\n  const code = document.createElement('code');\n\n  if (message) {\n    const { content, color } = message;\n\n    code.textContent = content;\n    code.style.color = color;\n  }\n\n  document.querySelector('#box').appendChild(code);\n}\n\nrun();\n\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ })
 
