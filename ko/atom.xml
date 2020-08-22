@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko">
+	<title></title>
+	<link href="https://taehoon.dev/ko/atom.xml" rel="self" type="application/atom+xml"/>
+	<link href="https://taehoon.dev"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2020-08-22T00:00:00+00:00</updated>
+	<id>https://taehoon.dev/ko/atom.xml</id>
+	<entry xml:lang="ko">
+		<title>첫 글 - 이 블로그는 Zola로 만들었습니다</title>
+		<published>2020-08-22T00:00:00+00:00</published>
+		<updated>2020-08-22T00:00:00+00:00</updated>
+		<link href="https://taehoon.dev/ko/blog/setup/" type="text/html"/>
+		<id>https://taehoon.dev/ko/blog/setup/</id>
+		<content type="html">&lt;p&gt;첫 글입니다.&lt;br &#x2F;&gt;
+일단 아무거나 쓰면서 시작해보죠.&lt;&#x2F;p&gt;
+&lt;p&gt;이 블로그를 만들면서 사용한 툴 소개를 가볍게 해보려합니다.&lt;br &#x2F;&gt;
+바로 &lt;a href=&quot;https:&#x2F;&#x2F;getzola.org&quot;&gt;Zola&lt;&#x2F;a&gt;입니다.&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Zola is A fast static site generator in a single binary with everything built-in.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;블로그 구축을 생각하면서, 사용하는 툴이 이 정도는 지원해주었으면 좋겠다 싶었던게 있었습니다.&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;마크다운 지원&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;사실 보통 무언가 글을 써서 공유를 하려한다 하면, WYSIWYG 에디터가 지원되는 플랫폼을 고르는게 일반적입니다.&lt;br &#x2F;&gt;
+그런제 제 경우에는, 블로그 글들을 &lt;code&gt;git&lt;&#x2F;code&gt;을 이용해서 관리를 하고 싶었고, 그런 용도로는 WYSIWIG 에디터는 상당히 좋지 못한 선택이 됩니다.&lt;br &#x2F;&gt;
+보통 WYSIWIG 에디터가 만들어낸 데이터는 사람이 읽을걸 고려하지 않기 때문에, 꽤나 지저분할 수 밖에 없습니다.&lt;br &#x2F;&gt;
+그리고 또 특정 WYSIWIG 에디터에 종속되는 문제도 있습니다, 한 번 쓰기 시작하면 다른걸로 갈아타기 힘들다는거죠.&lt;&#x2F;p&gt;
+&lt;p&gt;단순히 글 써서 공유해야겠다 싶은건데, 그 글 컨텐츠가 특정 플랫폼에 묶이고 종속되는 경우를 피하고 싶었습니다.&lt;&#x2F;p&gt;
+&lt;p&gt;이런 경우에 마크다운을 사용하기 매우 좋습니다.&lt;br &#x2F;&gt;
+마크다운은 그 자체로 바로 사람이 읽을 수 있고, 그렇다보니 특정 플랫폼에 거의 종속되지 않습니다.&lt;br &#x2F;&gt;
+그러니까... 사용하던 블로깅 플랫폼이 망하거나, 인기가 없어지는 뭐 그런 경우를 고민하지 않아도 된다는거죠.&lt;br &#x2F;&gt;
+마크다운을 사용하면 언제든 쉽게 다른 플랫폼으로 갈아탈 수 있을테니까요.&lt;&#x2F;p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;&lt;strong&gt;정적 사이트 생성기(Static site generator)&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;요즘은 Web 이라고 하는게, 그냥 읽기 좋은 문서 만들기 위한 용도는 이미 한참 넘었죠.&lt;br &#x2F;&gt;
+이젠 거의 웹 환경에서 아무거나 다 만들 수 있습니다.&lt;&#x2F;p&gt;
+&lt;p&gt;제 경우는 심지어 최근 몇 년 동안 이런저런 복잡한 웹사이트, 웹 어플리케이션 만드는게 제 주된 수입원이었기도 하구요.&lt;br &#x2F;&gt;
+그런데 사실 블로깅 용도로는... 너무 과합니다.&lt;br &#x2F;&gt;
+그냥 정적 HTML 이면 사실 충분하다는거죠, 글을 &lt;em&gt;읽는게&lt;&#x2F;em&gt; 주된 용도의 웹사이트라면 말이죠.&lt;&#x2F;p&gt;
+&lt;p&gt;음...&lt;&#x2F;p&gt;
+&lt;p&gt;그냥... 뭐... 블로그 관리하면서 React 버전 같은거 신경쓰고 싶지 않았습니다.&lt;&#x2F;p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;&lt;strong&gt;러스트로 만들어진 툴일 것&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;특별한 이유일건 없고 그냥 최근에 러스트를 주로 쓰고 있고, 정말 너무 매우 많이 만족하며 쓰고 있어서 그렇습니다.&lt;br &#x2F;&gt;
+이왕이면 러스트로 만든 정적 사이트 생성기가 없을까 하면서 찾아봐야겠다, 그런거죠.&lt;br &#x2F;&gt;
+러스트 기반인 툴이고 오픈소스라면 나중에 직접 코드 기여도 생각해볼 수 있을테니까요.&lt;&#x2F;p&gt;
+&lt;p&gt;만약 툴이 PHP 기반이다, 그리고 그걸 쓴다... 하면 쓰는건 쓰더라도
+아마 툴 개선하는데 기여를 해봐야겠다, 이런 생각은 절대 하지 않을 듯 합니다.&lt;br &#x2F;&gt;
+그런데 러스트라면? 어떤식이든 해 볼 생각이 매우 많습니다.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;zola&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;getzola.org&quot;&gt;Zola&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;3가지 조건을 아주 잘 갖추고 있던게 이 Zola 라는 정적 사이트 생성기였고, 그래서 선택했습니다.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>
