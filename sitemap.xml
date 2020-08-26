@@ -7,6 +7,10 @@
         <loc>https://taehoon.dev/blog/</loc>
     </url>
     <url>
+        <loc>https://taehoon.dev/blog/introducing-gluesql/</loc>
+        <lastmod>2020-08-26</lastmod>
+    </url>
+    <url>
         <loc>https://taehoon.dev/blog/setup/</loc>
         <lastmod>2020-08-22</lastmod>
     </url>
@@ -30,6 +34,9 @@
         <loc>https://taehoon.dev/tags/blogging/</loc>
     </url>
     <url>
+        <loc>https://taehoon.dev/tags/gluesql/</loc>
+    </url>
+    <url>
         <loc>https://taehoon.dev/tags/makeudaun/</loc>
     </url>
     <url>
@@ -42,7 +49,19 @@
         <loc>https://taehoon.dev/tags/rust/</loc>
     </url>
     <url>
+        <loc>https://taehoon.dev/tags/sql-database/</loc>
+    </url>
+    <url>
+        <loc>https://taehoon.dev/tags/sql/</loc>
+    </url>
+    <url>
         <loc>https://taehoon.dev/tags/static-site-generator/</loc>
+    </url>
+    <url>
+        <loc>https://taehoon.dev/tags/webassembly/</loc>
+    </url>
+    <url>
+        <loc>https://taehoon.dev/tags/websql/</loc>
     </url>
     <url>
         <loc>https://taehoon.dev/tags/zola/</loc>

@@ -4,8 +4,131 @@
 	<link href="https://taehoon.dev/atom.xml" rel="self" type="application/atom+xml"/>
 	<link href="https://taehoon.dev"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2020-08-22T00:00:00+00:00</updated>
+	<updated>2020-08-26T00:00:00+00:00</updated>
 	<id>https://taehoon.dev/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Introducing GlueSQL</title>
+		<published>2020-08-26T00:00:00+00:00</published>
+		<updated>2020-08-26T00:00:00+00:00</updated>
+		<link href="https://taehoon.dev/blog/introducing-gluesql/" type="text/html"/>
+		<id>https://taehoon.dev/blog/introducing-gluesql/</id>
+		<content type="html">&lt;p&gt;I&#x27;d like to share my project I&#x27;ve been working for several months.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;gluesql&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;gluesql&#x2F;gluesql&quot;&gt;GlueSQL!&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;It&#x27;s an open-source SQL database fully written in Rust!&lt;br &#x2F;&gt;
+Not only it is written in Rust, but also it has some other interesting stuffs to look around.&lt;br &#x2F;&gt;
+Let me briefly introduce them.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;GlueSQL provides SQL parser &amp;amp; execution layer as a library&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;You can use GlueSQL itself or to make your own SQL database.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;SQL parser used: &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ballista-compute&#x2F;sqlparser-rs&quot;&gt;sqlparser-rs&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Default storage engine: &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spacejam&#x2F;sled&quot;&gt;sled&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;&lt;strong&gt;The whole execution layer codes are pure functional&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;Rust is so good for functional programming, there is no &lt;code&gt;mut&lt;&#x2F;code&gt; in entire GlueSQL excution layer codes.&lt;&#x2F;p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;&lt;strong&gt;Web Assembly Support&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;You can simply see this,&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;gluesql.org&#x2F;playground&quot;&gt;GlueSQL-js Playground Demo&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;It&#x27;s so so easy to make custom storages&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Main repo: &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;gluesql&#x2F;gluesql-js&quot;&gt;GlueSQL-js&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;verbose-version&quot;&gt;Verbose version&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;GlueSQL provides SQL parser &amp;amp; execution layer as a library&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;Let&#x27;s just divide SQL database into 4 elements like these below,&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;SQL Parser&lt;&#x2F;li&gt;
+&lt;li&gt;Execution Layer&lt;&#x2F;li&gt;
+&lt;li&gt;Storage Layer&lt;&#x2F;li&gt;
+&lt;li&gt;Management Tools (CLI, connecting interfaces, ...)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;In the past, it was very natural to re-implement all that layers when someone wants to make a new SQL database.&lt;br &#x2F;&gt;
+Yeah, it was ok, in previous ages..&lt;br &#x2F;&gt;
+There were only a few number of SQL database implementations before.&lt;&#x2F;p&gt;
+&lt;p&gt;But how about nowadays?&lt;br &#x2F;&gt;
+SQL, SQL, SQL everywhere...&lt;&#x2F;p&gt;
+&lt;p&gt;We use SQL database when we make server side application.&lt;br &#x2F;&gt;
+We also use SQL database when we make complicated frontend application.&lt;br &#x2F;&gt;
+Big data analysis? They also provide SQL syntax support.&lt;br &#x2F;&gt;
+SQL database is not good for horizontal scaling?&lt;br &#x2F;&gt;
+No! Thanks to &lt;a href=&quot;https:&#x2F;&#x2F;raft.github.io&#x2F;&quot;&gt;Raft&lt;&#x2F;a&gt;, now we don&#x27;t need to worry about manual sharding, something bothersomes anymore.&lt;&#x2F;p&gt;
+&lt;p&gt;Still it makes sense to re-implement all that layers when we make a new SQL database?&lt;br &#x2F;&gt;
+I don&#x27;t think so.&lt;&#x2F;p&gt;
+&lt;p&gt;Recently, what we are mainly focusing is &amp;quot;Storage Layer&amp;quot;.&lt;br &#x2F;&gt;
+Though there already exists lots of SQL database implementations but the reason we still make new ones are mainly because of &amp;quot;storage&amp;quot;.&lt;br &#x2F;&gt;
+Specialize for big data analysis, streaming data, or horizontal scalability, ...&lt;&#x2F;p&gt;
+&lt;p&gt;It&#x27;s not usually because of SQL parser or execution layer.&lt;&#x2F;p&gt;
+&lt;p&gt;Then...&lt;&#x2F;p&gt;
+&lt;p&gt;Why not making them as a re-usable library?&lt;br &#x2F;&gt;
+That was my main motivation to start this project.&lt;br &#x2F;&gt;
+(Above is a cool version, my actual motivation was may be... I just wanted to make something using Rust.)&lt;&#x2F;p&gt;
+&lt;p&gt;GlueSQL provides very simple way to make custom storage.&lt;br &#x2F;&gt;
+Using Rust traits!&lt;br &#x2F;&gt;
+What you only need to do is implementing a few store traits, for now it is only two traits: &lt;code&gt;Store&lt;&#x2F;code&gt;, &lt;code&gt;StoreMut&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;&lt;strong&gt;The whole execution layer codes are pure functional&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;Using database, we store something.&lt;br &#x2F;&gt;
+It&#x27;s very obvious, it is stateful, and very mutable.&lt;br &#x2F;&gt;
+So at least for Storage Layer, it&#x27;s unavoidable not to use mutables.&lt;br &#x2F;&gt;
+Then in the case of SQL Parser and Execution Layer?&lt;&#x2F;p&gt;
+&lt;p&gt;At first, it&#x27;s ok to implement SQL parser functionally.&lt;br &#x2F;&gt;
+Role of SQL parser is, converting raw SQL string into AST.&lt;br &#x2F;&gt;
+input and output are very clear, so it looks ok.&lt;br &#x2F;&gt;
+Then how about execution layer?&lt;br &#x2F;&gt;
+It&#x27;s not that different, execution layer is just in between parser and storage layers.&lt;br &#x2F;&gt;
+Wow, input and output are also very clear like SQL parser.&lt;br &#x2F;&gt;
+There&#x27;s no need of storing something in execution layer, theoretically.&lt;br &#x2F;&gt;
+Role of execution layer is just delivering message properly from parser to storage layer.&lt;&#x2F;p&gt;
+&lt;p&gt;And Rust provides very straight forward way to write pure functional codes.&lt;br &#x2F;&gt;
+What we only need to is forgetting what &lt;code&gt;mut&lt;&#x2F;code&gt; keyword is.&lt;br &#x2F;&gt;
+Then it&#x27;s all ok, only issue is.. it might be little bit more painful to write code at first.&lt;br &#x2F;&gt;
+But that pain is worth enough to pay, then we can see side-effect free and easily debuggable codes.&lt;&#x2F;p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;&lt;strong&gt;Web Assembly Support&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;It may be not directly related to GlueSQL itself.&lt;br &#x2F;&gt;
+But... as you know... Rust provides very good WebAssembly supports, and GlueSQL is entirely written in Rust.&lt;br &#x2F;&gt;
+There no way for me not to make WebAssembly build, it attracted me toooo much.&lt;br &#x2F;&gt;
+So I did it, here is it.&lt;&#x2F;p&gt;
+&lt;p&gt;Let&#x27;s just begin with this demo&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;gluesql.org&#x2F;playground&quot;&gt;GlueSQL-js Playground&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;That demo is not something connecting to remote databases, SQL databse itself runs in web browsers!&lt;br &#x2F;&gt;
+It currently provides 3 storage options:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Memory&lt;&#x2F;li&gt;
+&lt;li&gt;localStorage&lt;&#x2F;li&gt;
+&lt;li&gt;sessionStorage&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;You can see the code in this repo: &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;gluesql&#x2F;gluesql-js-demo&quot;&gt;gluesql-js-demo&lt;&#x2F;a&gt;&lt;br &#x2F;&gt;
+One more interesting stuff, demo uses GlueSQL itself for state management which is often taken by &lt;a href=&quot;https:&#x2F;&#x2F;redux.js.org&#x2F;&quot;&gt;Redux&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Main repo is this: &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;gluesql&#x2F;gluesql-js&quot;&gt;GlueSQL-js&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;it-s-just-a-beginning&quot;&gt;It&#x27;s just a beginning&lt;&#x2F;h2&gt;
+&lt;p&gt;Now version I set is only v0.1.*,&lt;br &#x2F;&gt;
+There are tons of features to implement.&lt;br &#x2F;&gt;
+I&#x27;ll keep working on GlueSQL, and I also hope some of you feel interested in this project and do something together.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;plans&quot;&gt;Plans&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;More SQL syntax &amp;amp; feature support.&lt;&#x2F;li&gt;
+&lt;li&gt;Become a promising new generation of WebSQL.&lt;&#x2F;li&gt;
+&lt;li&gt;Make something &lt;a href=&quot;https:&#x2F;&#x2F;redux.js.org&#x2F;&quot;&gt;Redux&lt;&#x2F;a&gt; alternative using GlueSQL!&lt;&#x2F;li&gt;
+&lt;li&gt;Compete with &lt;a href=&quot;https:&#x2F;&#x2F;www.sqlite.org&#x2F;index.html&quot;&gt;SQLite&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;Be &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;serde-rs&#x2F;serde&quot;&gt;Serde&lt;&#x2F;a&gt; in SQL database world.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
 	<entry xml:lang="en">
 		<title>First article - Zola is cool</title>
 		<published>2020-08-22T00:00:00+00:00</published>

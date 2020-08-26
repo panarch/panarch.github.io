@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+
+    <style>
+      :root {
+        --accent-color: #05a081;
+        --accent-color-light: #82d0c0;
+      }
+    </style>
+
+    <meta name="theme-color" content="#05a081" />
+
+    
+      <link rel="icon" href="https:&#x2F;&#x2F;taehoon.dev&#x2F;processed_images&#x2F;444e76059742f47b00.png" />
+      <link rel="apple-touch-icon" sizes="48x48" href="https:&#x2F;&#x2F;taehoon.dev&#x2F;processed_images&#x2F;444e76059742f47b00.png" />
+      <link rel="apple-touch-icon" sizes="72x72" href="https:&#x2F;&#x2F;taehoon.dev&#x2F;processed_images&#x2F;6dfeb9b0bd094d5a00.png" />
+      <link rel="apple-touch-icon" sizes="96x96" href="https:&#x2F;&#x2F;taehoon.dev&#x2F;processed_images&#x2F;3959b3b31b7ae92700.png" />
+      <link rel="apple-touch-icon" sizes="144x144" href="https:&#x2F;&#x2F;taehoon.dev&#x2F;processed_images&#x2F;e644b27af091684500.png" />
+      <link rel="apple-touch-icon" sizes="192x192" href="https:&#x2F;&#x2F;taehoon.dev&#x2F;processed_images&#x2F;3344ee474c2d849c00.png" />
+      <link rel="apple-touch-icon" sizes="256x256" href="https:&#x2F;&#x2F;taehoon.dev&#x2F;processed_images&#x2F;d92103ca49c6bd5e00.png" />
+      <link rel="apple-touch-icon" sizes="384x384" href="https:&#x2F;&#x2F;taehoon.dev&#x2F;processed_images&#x2F;b8dd2689e662c9cd00.png" />
+      <link rel="apple-touch-icon" sizes="512x512" href="https:&#x2F;&#x2F;taehoon.dev&#x2F;processed_images&#x2F;c0d9496000275d3400.png" />
+    
+
+    
+
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary">
+
+    
+
+    
+
+    
+      
+        <meta name="description" content="" />
+        <meta name="twitter:description" content="">
+      
+    
+
+    
+      <meta name="twitter:title" content="Introducing GlueSQL">
+    
+
+    
+      <link rel="prerender" href="&#x2F;blog&#x2F;" />
+    
+      <link rel="prerender" href="https:&#x2F;&#x2F;github.com&#x2F;panarch" />
+    
+      <link rel="prerender" href="https:&#x2F;&#x2F;www.youtube.com&#x2F;channel&#x2F;UCnjY52bBF9t3Vc4-rAdUy-g" />
+    
+
+    <link rel="prefetch" href="https:&#x2F;&#x2F;taehoon.dev&#x2F;processed_images&#x2F;53af5229a2f8852200.png" />
+
+    <title>
+      
+        
+          Introducing GlueSQL
+        
+      
+    </title>
+
+    
+    
+      <link rel="stylesheet" href="https://taehoon.dev/style.css">
+      <link rel="stylesheet" href="https://taehoon.dev/main.css">
+    
+    
+  
+    <link rel="prerender" href="https:&#x2F;&#x2F;taehoon.dev&#x2F;blog&#x2F;setup&#x2F;">
+  
+
+  
+
+  
+    <link rel="prerender"  href="https:&#x2F;&#x2F;taehoon.dev&#x2F;tags&#x2F;gluesql&#x2F;">
+  
+    <link rel="prerender"  href="https:&#x2F;&#x2F;taehoon.dev&#x2F;tags&#x2F;websql&#x2F;">
+  
+    <link rel="prerender"  href="https:&#x2F;&#x2F;taehoon.dev&#x2F;tags&#x2F;rust&#x2F;">
+  
+    <link rel="prerender"  href="https:&#x2F;&#x2F;taehoon.dev&#x2F;tags&#x2F;webassembly&#x2F;">
+  
+    <link rel="prerender"  href="https:&#x2F;&#x2F;taehoon.dev&#x2F;tags&#x2F;sql&#x2F;">
+  
+    <link rel="prerender"  href="https:&#x2F;&#x2F;taehoon.dev&#x2F;tags&#x2F;sql-database&#x2F;">
+  
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://google.com/article"
+      },
+      "headline": "Introducing GlueSQL",
+      "image": [],
+      "datePublished": "2020-08-26T00:00:00+00:00",
+      "dateModified": "2020-08-26T00:00:00+00:00",
+      "author": {
+        "@type": "Person",
+        "name": "Taehoon Moon"
+      },
+       "publisher": {
+        "@type": "Organization",
+        "name": "Taehoon Moon",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://taehoon.dev/icon.png"
+        }
+        
+      }
+      
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        
+
+        
+        {
+          
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Taehoon from GlueSQL",
+          "item": "https://taehoon.dev/"
+        },
+        
+        {
+          
+          "@type": "ListItem",
+          "position": 2,
+          "name": "",
+          "item": "https://taehoon.dev/blog/"
+        },
+        
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Introducing GlueSQL",
+          "item": "https://taehoon.dev/blog/introducing-gluesql/"
+        }
+      ]
+    }
+  </script>
+
+  </head>
+  <body>
+    
+      <header>
+        <a class="profile-icon" href="/">
+          <img src="https:&#x2F;&#x2F;taehoon.dev&#x2F;processed_images&#x2F;53af5229a2f8852200.png" alt="profile picture">
+        </a>
+        <nav>
+          
+            <a href="&#x2F;blog&#x2F;">Blog</a>
+          
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;panarch">GitHub</a>
+          
+            <a href="https:&#x2F;&#x2F;www.youtube.com&#x2F;channel&#x2F;UCnjY52bBF9t3Vc4-rAdUy-g">YouTube</a>
+          
+        </nav>
+      </header>
+    
+    <main>
+    
+  <div class="post-title">
+    <h1>Introducing GlueSQL</h1>
+    <small>
+      
+        August 26, 2020
+      
+
+      
+        - 
+        <span class="tags">
+          
+            <a href="https:&#x2F;&#x2F;taehoon.dev&#x2F;tags&#x2F;gluesql&#x2F;">gluesql</a>
+          
+            <a href="https:&#x2F;&#x2F;taehoon.dev&#x2F;tags&#x2F;websql&#x2F;">websql</a>
+          
+            <a href="https:&#x2F;&#x2F;taehoon.dev&#x2F;tags&#x2F;rust&#x2F;">rust</a>
+          
+            <a href="https:&#x2F;&#x2F;taehoon.dev&#x2F;tags&#x2F;webassembly&#x2F;">webassembly</a>
+          
+            <a href="https:&#x2F;&#x2F;taehoon.dev&#x2F;tags&#x2F;sql&#x2F;">sql</a>
+          
+            <a href="https:&#x2F;&#x2F;taehoon.dev&#x2F;tags&#x2F;sql-database&#x2F;">sql-database</a>
+          
+        </span>
+      
+      <br />
+      
+    </small>
+  </div>
+
+  <div>
+    <p>I'd like to share my project I've been working for several months.</p>
+<h3 id="gluesql"><a href="https://github.com/gluesql/gluesql">GlueSQL!</a></h3>
+<p>It's an open-source SQL database fully written in Rust!<br />
+Not only it is written in Rust, but also it has some other interesting stuffs to look around.<br />
+Let me briefly introduce them.</p>
+<h2 id="summary">Summary</h2>
+<ol>
+<li><strong>GlueSQL provides SQL parser &amp; execution layer as a library</strong></li>
+</ol>
+<p>You can use GlueSQL itself or to make your own SQL database.</p>
+<ul>
+<li>SQL parser used: <a href="https://github.com/ballista-compute/sqlparser-rs">sqlparser-rs</a></li>
+<li>Default storage engine: <a href="https://github.com/spacejam/sled">sled</a></li>
+</ul>
+<ol start="2">
+<li><strong>The whole execution layer codes are pure functional</strong></li>
+</ol>
+<p>Rust is so good for functional programming, there is no <code>mut</code> in entire GlueSQL excution layer codes.</p>
+<ol start="3">
+<li><strong>Web Assembly Support</strong></li>
+</ol>
+<p>You can simply see this,</p>
+<ul>
+<li><a href="https://gluesql.org/playground">GlueSQL-js Playground Demo</a></li>
+</ul>
+<p>It's so so easy to make custom storages</p>
+<ul>
+<li>Main repo: <a href="https://github.com/gluesql/gluesql-js">GlueSQL-js</a></li>
+</ul>
+<h2 id="verbose-version">Verbose version</h2>
+<ol>
+<li><strong>GlueSQL provides SQL parser &amp; execution layer as a library</strong></li>
+</ol>
+<p>Let's just divide SQL database into 4 elements like these below,</p>
+<ul>
+<li>SQL Parser</li>
+<li>Execution Layer</li>
+<li>Storage Layer</li>
+<li>Management Tools (CLI, connecting interfaces, ...)</li>
+</ul>
+<p>In the past, it was very natural to re-implement all that layers when someone wants to make a new SQL database.<br />
+Yeah, it was ok, in previous ages..<br />
+There were only a few number of SQL database implementations before.</p>
+<p>But how about nowadays?<br />
+SQL, SQL, SQL everywhere...</p>
+<p>We use SQL database when we make server side application.<br />
+We also use SQL database when we make complicated frontend application.<br />
+Big data analysis? They also provide SQL syntax support.<br />
+SQL database is not good for horizontal scaling?<br />
+No! Thanks to <a href="https://raft.github.io/">Raft</a>, now we don't need to worry about manual sharding, something bothersomes anymore.</p>
+<p>Still it makes sense to re-implement all that layers when we make a new SQL database?<br />
+I don't think so.</p>
+<p>Recently, what we are mainly focusing is &quot;Storage Layer&quot;.<br />
+Though there already exists lots of SQL database implementations but the reason we still make new ones are mainly because of &quot;storage&quot;.<br />
+Specialize for big data analysis, streaming data, or horizontal scalability, ...</p>
+<p>It's not usually because of SQL parser or execution layer.</p>
+<p>Then...</p>
+<p>Why not making them as a re-usable library?<br />
+That was my main motivation to start this project.<br />
+(Above is a cool version, my actual motivation was may be... I just wanted to make something using Rust.)</p>
+<p>GlueSQL provides very simple way to make custom storage.<br />
+Using Rust traits!<br />
+What you only need to do is implementing a few store traits, for now it is only two traits: <code>Store</code>, <code>StoreMut</code></p>
+<ol start="2">
+<li><strong>The whole execution layer codes are pure functional</strong></li>
+</ol>
+<p>Using database, we store something.<br />
+It's very obvious, it is stateful, and very mutable.<br />
+So at least for Storage Layer, it's unavoidable not to use mutables.<br />
+Then in the case of SQL Parser and Execution Layer?</p>
+<p>At first, it's ok to implement SQL parser functionally.<br />
+Role of SQL parser is, converting raw SQL string into AST.<br />
+input and output are very clear, so it looks ok.<br />
+Then how about execution layer?<br />
+It's not that different, execution layer is just in between parser and storage layers.<br />
+Wow, input and output are also very clear like SQL parser.<br />
+There's no need of storing something in execution layer, theoretically.<br />
+Role of execution layer is just delivering message properly from parser to storage layer.</p>
+<p>And Rust provides very straight forward way to write pure functional codes.<br />
+What we only need to is forgetting what <code>mut</code> keyword is.<br />
+Then it's all ok, only issue is.. it might be little bit more painful to write code at first.<br />
+But that pain is worth enough to pay, then we can see side-effect free and easily debuggable codes.</p>
+<ol start="3">
+<li><strong>Web Assembly Support</strong></li>
+</ol>
+<p>It may be not directly related to GlueSQL itself.<br />
+But... as you know... Rust provides very good WebAssembly supports, and GlueSQL is entirely written in Rust.<br />
+There no way for me not to make WebAssembly build, it attracted me toooo much.<br />
+So I did it, here is it.</p>
+<p>Let's just begin with this demo</p>
+<ul>
+<li><a href="https://gluesql.org/playground">GlueSQL-js Playground</a></li>
+</ul>
+<p>That demo is not something connecting to remote databases, SQL databse itself runs in web browsers!<br />
+It currently provides 3 storage options:</p>
+<ul>
+<li>Memory</li>
+<li>localStorage</li>
+<li>sessionStorage</li>
+</ul>
+<p>You can see the code in this repo: <a href="https://github.com/gluesql/gluesql-js-demo">gluesql-js-demo</a><br />
+One more interesting stuff, demo uses GlueSQL itself for state management which is often taken by <a href="https://redux.js.org/">Redux</a>.</p>
+<p>Main repo is this: <a href="https://github.com/gluesql/gluesql-js">GlueSQL-js</a></p>
+<h2 id="it-s-just-a-beginning">It's just a beginning</h2>
+<p>Now version I set is only v0.1.*,<br />
+There are tons of features to implement.<br />
+I'll keep working on GlueSQL, and I also hope some of you feel interested in this project and do something together.</p>
+<h2 id="plans">Plans</h2>
+<ul>
+<li>More SQL syntax &amp; feature support.</li>
+<li>Become a promising new generation of WebSQL.</li>
+<li>Make something <a href="https://redux.js.org/">Redux</a> alternative using GlueSQL!</li>
+<li>Compete with <a href="https://www.sqlite.org/index.html">SQLite</a>.</li>
+<li>Be <a href="https://github.com/serde-rs/serde">Serde</a> in SQL database world.</li>
+</ul>
+
+  </div>
+
+  <hr class="footer-rule" />
+
+  
+
+  <div class="related-container">
+
+    
+      <div class="link">
+        Previous <br />
+        <a href="https:&#x2F;&#x2F;taehoon.dev&#x2F;blog&#x2F;setup&#x2F;">First article - Zola is cool</a>
+      </div>
+    
+
+    
+
+  </div>
+
+<div id="disqus_thread"></div>
+<script>
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+var disqus_config = function () {
+  this.page.url = 'https://taehoon.dev/blog&#x2F;introducing-gluesql&#x2F;';
+  this.page.identifier = 'blog&#x2F;2020-08-26-introducing-gluesql.md';
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
+  s.src = 'https://taehoon-dev.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+    </main>
+  </body>
+</html>
