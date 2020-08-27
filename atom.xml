@@ -12,11 +12,9 @@
 		<updated>2020-08-26T00:00:00+00:00</updated>
 		<link href="https://taehoon.dev/blog/introducing-gluesql/" type="text/html"/>
 		<id>https://taehoon.dev/blog/introducing-gluesql/</id>
-		<content type="html">&lt;p&gt;I&#x27;d like to share my project I&#x27;ve been working for several months.&lt;&#x2F;p&gt;
-&lt;h3 id=&quot;gluesql&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;gluesql&#x2F;gluesql&quot;&gt;GlueSQL!&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+		<content type="html">&lt;h3 id=&quot;gluesql&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;gluesql&#x2F;gluesql&quot;&gt;GlueSQL!&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
 &lt;p&gt;It&#x27;s an open-source SQL database fully written in Rust!&lt;br &#x2F;&gt;
-Not only it is written in Rust, but also it has some other interesting stuffs to look around.&lt;br &#x2F;&gt;
-Let me briefly introduce them.&lt;&#x2F;p&gt;
+Written in Rust, pure functional execution layer, easily swappable storage and web assembly support!&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;summary&quot;&gt;Summary&lt;&#x2F;h2&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;GlueSQL provides SQL parser &amp;amp; execution layer as a library&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
