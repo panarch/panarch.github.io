@@ -39,7 +39,7 @@ Written in Rust, pure functional execution layer, easily swappable storage and w
 &lt;ul&gt;
 &lt;li&gt;Main repo: &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;gluesql&#x2F;gluesql-js&quot;&gt;GlueSQL-js&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;verbose-version&quot;&gt;Verbose version&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;for-description&quot;&gt;For Description&lt;&#x2F;h2&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;GlueSQL provides SQL parser &amp;amp; execution layer as a library&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ol&gt;
