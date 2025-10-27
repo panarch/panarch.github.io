@@ -1,10 +1,9 @@
-Thursday, October 9
-10:00–10:45
-Main Stage
+## Day 1 – Thursday, Oct 9
 
-## Are We Desktop Yet? Challenges and stories of writing a desktop environment in Rust
-### Victoria Brekenfeld (System76)
-https://eurorust.eu/2025/talks/are-we-desktop-yet/
+### Are We Desktop Yet? Challenges and stories of writing a desktop environment in Rust
+> `10:00–10:45 · Main Stage`
+> 발표자: Victoria Brekenfeld (System76)
+> [세션 링크](https://eurorust.eu/2025/talks/are-we-desktop-yet/)
 
 컨퍼런스의 첫 세션이었습니다.
 처음엔 솔직히 꽤 생소했습니다. Rust로 데스크톱 환경을 만든다는 게 왜 필요한 일인지, 왜 굳이 직접 툴킷까지 새로 만들어야 하는지 쉽게 납득이 되지 않았습니다.
@@ -26,16 +25,10 @@ System76은 단순히 리눅스 노트북이나 데스크톱을 판매하는 회
 그들의 시도는 단순히 제품 개발을 넘어서, **"리눅스 데스크톱 전체를 더 나은 방향으로 끌어올리려는 움직임"**으로 느껴졌고,
 이제는 정말 응원하고 싶다는 생각이 들었습니다.
 
----
-
-Thursday, October 9, 2025
-11:00-11:30
-Main Stage
-
-https://eurorust.eu/2025/talks/building-and-maintaining-rust-at-scale/
-
-## Exemplary by Design: Building and Maintaining Rust at Scale
-### Jacob Pratt (Rust Foundation Fellow)
+### Exemplary by Design: Building and Maintaining Rust at Scale
+> `11:00–11:30 · Main Stage`
+> 발표자: Jacob Pratt (Rust Foundation Fellow)
+> [세션 링크](https://eurorust.eu/2025/talks/building-and-maintaining-rust-at-scale/)
 
 이 세션은 대규모 Rust 코드베이스를 어떻게 ‘Rust스럽게’ 유지할 것인가에 대한 이야기였습니다.
 테스트, 코드 커버리지, 파일 구조, lint 규칙, 빌드 속도 관리 등 - Rust의 여러 강점을 어떻게 체계적으로 적용할 수 있는지를 전반적으로 다뤘습니다.
@@ -55,16 +48,10 @@ enum의 variant가 바뀌거나 추가될 때마다 breaking change가 되어버
 하지만 "이런 식으로 error 설계의 안정성을 확보할 수 있다"는 발상 자체가 꽤 인상적이었고,
 개인적으로도 앞으로 error 타입을 설계할 때 다시 한 번 생각해볼 만한 아이디어였습니다.
 
----
-
-Thursday, October 9, 2025
-11:45–12:15
-Main Stage
-
-https://eurorust.eu/2025/talks/from-any-to-this/
-
-## From any to this: using concrete error types instead of a catchall
-### Leo Kettmeir (Deno Project)
+### From any to this: using concrete error types instead of a catchall
+> `11:45–12:15 · Main Stage`
+> 발표자: Leo Kettmeir (Deno Project)
+> [세션 링크](https://eurorust.eu/2025/talks/from-any-to-this/)
 
 이 세션은 **Deno 프로젝트가 기존의 anyhow 기반 에러 핸들링을 버리고, thiserror를 활용한 구체적인 에러 타입(concrete error types)**으로 전환한 과정을 다룬 발표였습니다.
 anyhow는 초기에 빠르게 개발하기엔 편리하지만, 모든 에러를 하나로 감싸다 보니 규모가 커질수록 에러의 출처를 추적하거나 타입 안정성을 유지하기 어려워지는 문제가 생깁니다.
@@ -76,22 +63,12 @@ Deno 팀은 이를 해결하기 위해 수십 개의 crate에 걸친 대규모 �
 그럼에도 불구하고, 시간이 지나며 thiserror로 전환해 더 명확하고 유지보수 가능한 구조로 나아간 점이 인상적이었습니다.
 현실적인 타협과 이상적인 설계 사이에서 점진적으로 개선해가는 과정을 보여준 사례로, 실제 현업에서도 생각해볼 만한 부분이 많았습니다.
 
----
+**12:15–13:45 · Lunch**
 
-12:15–13:45
-
-Lunch
-
----
-
-Wednesday, October 9
-13:45-14:15
-Main Stage
-
-https://eurorust.eu/2025/talks/production-unsafe-rust/
-
-## Production Unsafe Rust: Patterns for Zero-Copy Performance
-### Muskan Paliwal
+### Production Unsafe Rust: Patterns for Zero-Copy Performance
+> `13:45–14:15 · Main Stage`
+> 발표자: Muskan Paliwal
+> [세션 링크](https://eurorust.eu/2025/talks/production-unsafe-rust/)
 
 Rust를 5년 넘게 사용해오고 있지만, 사실상 unsafe 영역을 직접 다뤄본 경험은 거의 없었습니다.
 그래서 지금까지는 "unsafe는 성능에 극도로 민감한 시스템에서나 필요한, 나와는 조금 먼 이야기" 정도로만 생각했고, 자연스럽게 관심도 많지 않았습니다.
@@ -106,16 +83,10 @@ Rust를 5년 넘게 사용해오고 있지만, 사실상 unsafe 영역을 직접
 
 아직 제 프로젝트에서는 직접 unsafe를 다룰 일이 없겠지만, 이 세션 덕분에 "어떤 상황에서 unsafe가 필요할지, 그리고 그때 어떤 접근이 합리적인지"를 좀 더 명확히 이해하게 되어 매우 유익했습니다.
 
----
-
-Thursday, October 9, 2025
-14:30-15:00
-Main Stage
-
-https://eurorust.eu/2025/talks/roto-scripting-language/
-
-## Roto: a fast and safe scripting language
-### Terts Diepraam (NLnet Labs)
+### Roto: a fast and safe scripting language
+> `14:30–15:00 · Main Stage`
+> 발표자: Terts Diepraam (NLnet Labs)
+> [세션 링크](https://eurorust.eu/2025/talks/roto-scripting-language/)
 
 이 세션은 NLnet Labs가 자체적으로 개발한 정적 타입 스크립트 언어 Roto를 소개하는 발표였습니다.
 NLnet Labs는 BGP 엔진 Rotonda를 Rust로 개발하면서, 기존의 스크립트 언어들이 성능이나 안정성 면에서 요구사항을 충족하지 못해 직접 언어를 만드는 선택을 했다고 합니다.
@@ -131,16 +102,10 @@ Rust 코드에 쉽게 임베드할 수 있고, Rust에서 정의한 타입과 �
 
 전반적으로 Rust 생태계 안에서 "정적 타입 기반의 내장용 스크립트 언어"가 현실화되는 흥미로운 시도였고, GlueSQL과 같은 프로젝트에서 어떻게 응용할 수 있을지 생각해보게 된 유익한 세션이었습니다.
 
----
-
-Thursday, October 9, 2025
-15:15–15:45
-Main Stage
-
-https://eurorust.eu/2025/talks/trust-your-benchmarks/
-
-## Trust Your Benchmarks, Not Your Instincts: A Rust Performance Quiz
-### Arthur Pastel & Adrien Cacciaguerra (CodSpeed)
+### Trust Your Benchmarks, Not Your Instincts: A Rust Performance Quiz
+> `15:15–15:45 · Main Stage`
+> 발표자: Arthur Pastel & Adrien Cacciaguerra (CodSpeed)
+> [세션 링크](https://eurorust.eu/2025/talks/trust-your-benchmarks/)
 
 가볍게 들을 수 있었던 재미있는 세션이었습니다.
 두 코드 중 어떤 쪽이 실제로 더 빠를지를 맞춰보는 퀴즈 형식으로 진행됐는데, 단순한 이론 설명이 아니라 직접 비교를 통해 체감할 수 있어서 흥미로웠습니다.
@@ -153,22 +118,12 @@ Rust는 컴파일러가 워낙 똑똑해서 대부분의 경우 알아서 최적
 
 전체적으로는 부담 없이 즐길 수 있는 세션이었지만, 동시에 Rust 코드의 성능 최적화에서 직관이 얼마나 자주 틀릴 수 있는지를 잘 보여준 유익한 시간이었습니다.
 
----
+**15:45–16:15 · Snack Break**
 
-15:45–16:15
-
-Snack Break
-
----
-
-Thursday, October 9, 2025
-16:15–16:45
-Main Stage
-
-https://eurorust.eu/2025/talks/reflections-on-the-humans/
-
-## Reflection on the humans powering Rust ecosystem
-### Rohit Dandamudi (Rust Foundation Fellow, UBC Research Engineer)
+### Reflection on the humans powering Rust ecosystem
+> `16:15–16:45 · Main Stage`
+> 발표자: Rohit Dandamudi (Rust Foundation Fellow, UBC Research Engineer)
+> [세션 링크](https://eurorust.eu/2025/talks/reflections-on-the-humans/)
 
 이 세션은 Rust 생태계를 만들어가는 사람들에 초점을 맞춘 발표였습니다.
 기술적인 이야기보다는, Rust 커뮤니티의 다양성과 구조적인 문제를 데이터로 분석하고 이를 개선하기 위한 움직임에 대해 다뤘습니다.
@@ -185,16 +140,10 @@ https://eurorust.eu/2025/talks/reflections-on-the-humans/
 
 전반적으로 Rust 생태계를 기술이 아닌 사람의 관점에서 바라볼 수 있었던 의미 있는 시간이었습니다.
 
----
-
-Thursday, October 9, 2025
-17:45–18:30
-Main Stage
-
-https://eurorust.eu/2025/talks/rendering-at-1-million-pixels-millisecond-with-gpui/
-
-## Rendering at 1 million pixels / millisecond with GPUI
-### Conrad Irwin (Zed)
+### Rendering at 1 million pixels / millisecond with GPUI
+> `17:45–18:30 · Main Stage`
+> 발표자: Conrad Irwin (Zed)
+> [세션 링크](https://eurorust.eu/2025/talks/rendering-at-1-million-pixels-millisecond-with-gpui/)
 
 Zed는 작년 RustConf 2024 몬트리올에서도 스폰서로 참여해 부스를 운영했었는데,
 그때 직접 이야기를 나눌 기회도 있었고, 개인적으로도 이미 자주 사용하던 에디터라 관심이 많았습니다.
@@ -228,21 +177,12 @@ Zed는 오픈소스로 코드를 공개하고 있지만, 대부분 AGPL이나 GP
 발표 이후 코드를 직접 둘러봤을 때는 아직 포함되어 있지 않았지만,
 그럼에도 GPUI의 방향성과 완성도는 충분히 응원하고 싶은 프로젝트였습니다.
 
----
+## Day 2 – Friday, Oct 10
 
-
-# Day 2
-
----
-
-Thursday, October 9, 2025
-10:00–10:45
-Main Stage
-
-https://eurorust.eu/2025/talks/rewrite-optimize-repeat/
-
-## Rewrite, Optimize, Repeat: Our Journey Porting a Triemap from C to Rust
-### Luca Palmieri (MainMatter)
+### Rewrite, Optimize, Repeat: Our Journey Porting a Triemap from C to Rust
+> `10:00–10:45 · Main Stage`
+> 발표자: Luca Palmieri (MainMatter)
+> [세션 링크](https://eurorust.eu/2025/talks/rewrite-optimize-repeat/)
 
 이 세션은 Redis의 검색 기능 일부를 C에서 Rust로 포팅하면서, 단순히 언어를 바꾸는 수준을 넘어 어떻게 성능을 개선하고 구조를 재설계했는지를 다룬 발표였습니다.
 C의 TrieMap 구현을 Rust로 옮기는 과정에서 단순 변환이 아니라 데이터 구조와 메모리 모델을 Rust 철학에 맞게 다시 설계한 사례였고,
@@ -264,17 +204,10 @@ unsafe를 실제로 어떻게 사용하고, 현실적인 성능 개선으로 이
 EuroRust를 공식적으로 후원하고 주요 세션을 직접 발표할 정도로 존재감을 가진 회사라는 점도 인상적이었습니다.
 컨퍼런스의 메인 스테이지에서 실제 산업 사례를 기반으로 발표하는 모습을 보면서,
 이런 식으로 컨설팅 회사가 기술 생태계에 기여하고 신뢰를 쌓아가는 구조도 있다는 걸 새삼 느낄 수 있었습니다.
-
----
-
-Friday, October 10, 2025
-11:00–11:30
-Side Stage
-
-https://eurorust.eu/2025/talks/random-seeds-and-state-machines/
-
-## Random Seeds and State Machines: An Approach to Deterministic Simulation Testing
-### Alfonso Subiotto (Polar Signals)
+### Random Seeds and State Machines: An Approach to Deterministic Simulation Testing
+> `11:00–11:30 · Side Stage`
+> 발표자: Alfonso Subiotto (Polar Signals)
+> [세션 링크](https://eurorust.eu/2025/talks/random-seeds-and-state-machines/)
 
 Concurrent한 상황에서 발생하는 버그는 정말 재현이 어렵습니다.
 이 세션은 그런 어려운 문제를 다루는 매우 흥미로운 사례로 시작했습니다.
@@ -296,17 +229,10 @@ Concurrent한 상황에서 발생하는 버그는 정말 재현이 어렵습니�
 특히 “concurrent한 문제는 concurrent하게 테스트해야 한다”는 일반적인 관점에서 벗어나,
 결정론적 시뮬레이션을 통해 동일한 실행 흐름을 반복 재현할 수 있게 만든 접근은 굉장히 인상 깊었습니다.
 이건 단순한 테스트 기법이 아니라, 분산 시스템에서 신뢰성과 재현성을 확보하는 새로운 패러다임처럼 느껴졌습니다.
-
----
-
-Friday, October 10, 2025
-11:45-12:15
-Main Stage
-
-https://eurorust.eu/2025/talks/how-to-fit-an-elephant/
-
-## How to Fit an Elephant in a Rusty Refrigerator: Conquering a 7,000-Type API
-### Kiril Karaatanasov (VMware, Broadcom)
+### How to Fit an Elephant in a Rusty Refrigerator: Conquering a 7,000-Type API
+> `11:45–12:15 · Main Stage`
+> 발표자: Kiril Karaatanasov (VMware, Broadcom)
+> [세션 링크](https://eurorust.eu/2025/talks/how-to-fit-an-elephant/)
 
 이 세션은 7,000개가 넘는 타입을 가진 레거시 엔터프라이즈 API를 Rust로 옮기는 과정을 다룬 발표였습니다.
 수십 년 된 시스템의 복잡한 상속 구조와 느린 컴파일 타임, 수천 개의 타입이 얽혀 있는 거대한 코드를
@@ -332,22 +258,12 @@ Rust의 타입 시스템으로 복잡성을 길들이는 것이었습니다.
 그래서 다시 돌아보면, 단순히 흥미로운 발표가 아니라
 실제 산업 규모의 코드베이스에서 Rust를 어떻게 현실적으로 적용할 수 있는가를 보여준 귀중한 사례였다고 느껴집니다.
 
----
+**12:15–13:45 · Lunch**
 
-12:15–13:45
-
-Lunch
-
----
-
-Friday, October 10
-13:45–14:15
-Side Stage
-
-https://eurorust.eu/2025/talks/serde-driven-reflection/
-
-## A Deep Dive into Serde-Driven Reflection
-### Ohad Ravid (Wiz)
+### A Deep Dive into Serde-Driven Reflection
+> `13:45–14:15 · Side Stage`
+> 발표자: Ohad Ravid (Wiz)
+> [세션 링크](https://eurorust.eu/2025/talks/serde-driven-reflection/)
 
 이 세션은 Serde의 내부 동작을 깊이 파고들며, Rust에서 리플렉션(reflection)에 가까운 기능을 어떻게 구현할 수 있는가를 다룬 발표였습니다.
 Rust는 정적 타입 언어라 런타임 리플렉션이 불가능하지만, Serde의 구조를 활용하면 컴파일 타임 수준에서 타입 정보를 다루는 방법을 만들 수 있다는 점을 보여주었습니다.
@@ -365,16 +281,10 @@ Serde deserializer를 직접 구현한 경험은 없지만, 비슷한 맥락에�
 결국 Serde의 내부 원리와 구조를 깊이 이해하면,
 Rust에서 타입 안정성과 유연성을 동시에 잡을 수 있는 방법이 얼마나 다양할 수 있는지를 보여준 유익한 세션이었습니다.
 
----
-
-Friday, October 10, 2025
-14:30–15:00
-Main Stage
-
-https://eurorust.eu/2025/talks/how-rust-compiles/
-
-## How Rust Compiles
-### Noratrieb (Rust Compiler Team)
+### How Rust Compiles
+> `14:30–15:00 · Main Stage`
+> 발표자: Noratrieb (Rust Compiler Team)
+> [세션 링크](https://eurorust.eu/2025/talks/how-rust-compiles/)
 
 이 세션은 우리가 cargo build를 실행할 때 Rust 컴파일러가 내부적으로 어떤 과정을 거쳐 실행 파일을 만들어내는지를 단계별로 설명한 발표였습니다.
 타입 검사부터 MIR 생성, LLVM을 통한 코드 생성, 그리고 링킹까지 Rust의 컴파일 파이프라인을 구체적으로 다뤘습니다.
@@ -390,16 +300,10 @@ Rust의 안전성과 성능이 단순히 언어의 특성이 아니라, 컴파�
 그래서 이렇게 컨퍼런스 현장에서 직접 들을 수 있었다는 것만으로도 의미가 컸고,
 오프라인 참여를 통해 자연스럽게 새로운 주제에 노출되고 흥미를 확장할 수 있는 기회였다는 점에서 더 유익한 시간이었습니다.
 
----
-
-Friday, October 10, 2025
-15:15–15:45
-Main Stage
-
-https://eurorust.eu/2025/talks/misusing-const/
-
-## Misusing Const for Fn and Profit
-### Tristram Oaten (No Boilerplate)
+### Misusing Const for Fn and Profit
+> `15:15–15:45 · Main Stage`
+> 발표자: Tristram Oaten (No Boilerplate)
+> [세션 링크](https://eurorust.eu/2025/talks/misusing-const/)
 
 이 세션은 Rust의 **`const` 기능을 활용해 런타임이 아닌 컴파일 타임에 계산을 수행하는 방법**을 다룬 발표였습니다.
 제목처럼 “const를 잘못 써서 이득을 본다”는 농담조의 표현이지만, 실제로는 **컴파일 타임 계산과 제로 코스트 추상화의 관계**를 깊이 있게 다룬 내용이었습니다.
@@ -414,22 +318,12 @@ Rust에서는 `const fn`을 통해 일부 함수를 컴파일 시점에 실행�
 발표를 들으며 "이 기능을 좀 더 적극적으로 활용해볼 수도 있겠다"는 생각이 들었고,
 세부 내용 중에 기억이 나지 않는 부분도 있어서 영상이 유튜브에 공개되면 한 번 다시 보려고 생각중입니다.
 
----
+**15:45–16:15 · Snack Break**
 
-15:45–16:15
-
-Snack Break
-
----
-
-Friday, October 10
-16:15–16:45
-Side Stage
-
-https://eurorust.eu/2025/talks/what-are-attributes/
-
-## What actually are attributes?
-### Jana Dönszelmann (Rust Compiler Team, Hexcat)
+### What actually are attributes?
+> `16:15–16:45 · Side Stage`
+> 발표자: Jana Dönszelmann (Rust Compiler Team, Hexcat)
+> [세션 링크](https://eurorust.eu/2025/talks/what-are-attributes/)
 
 이 세션은 Rust 문법 전반에 걸쳐 자주 등장하는 **`#[attribute]`** 가 내부적으로 어떻게 작동하는지를 깊이 다룬 발표였습니다.
 우리가 익숙하게 사용하는 `#[derive]`, `#[test]`, `#[tokio::main]`, `#[serde(...)]` 같은 속성들이
@@ -448,16 +342,10 @@ attribute의 자유도 때문에 생긴 예외적인 케이스들을 실제 버�
 이런 기술 부채를 하나씩 해결해나가며 언어를 점진적으로 다듬어가는 과정이 흥미로웠고,
 Rust의 성숙도가 이렇게 쌓여간다는 점이 인상 깊었습니다.
 
----
-
-## Friday, October 10, 2025
-17:00-17:30
-Side Stage
-
-https://eurorust.eu/2025/talks/panic-at-the-disk-oh/
-
-## Panic! At The Disk Oh!
-### Jonas Kruckenberg (MainMatter)
+### Panic! At The Disk Oh!
+> `17:00–17:30 · Side Stage`
+> 발표자: Jonas Kruckenberg (MainMatter)
+> [세션 링크](https://eurorust.eu/2025/talks/panic-at-the-disk-oh/)
 
 이 세션은 Rust에서 **패닉(panic)** 이 실제로 어떻게 동작하는지를 깊이 있게 다룬 발표였습니다.
 `unwrap()` 실패나 `assert!` 실패처럼 익숙한 상황에서 프로그램이 종료되는 과정을 단순히 “크래시한다”로 끝내지 않고,
@@ -471,16 +359,10 @@ panic! 뒤의 세계를 이렇게 구체적으로 설명해주는 세션은 흔�
 Rust의 안전성이 언어 자체뿐 아니라 **런타임 수준에서도 얼마나 정교하게 설계되어 있는지** 이해할 수 있었던 시간이었습니다.
 생각해보지 못했던 주제였지만 **유익하고 재미있게 들은 세션**이었습니다.
 
----
-
-Friday, October 10
-17:45–18:30
-Main Stage
-
-https://eurorust.eu/2025/talks/lightning-fast-search-engine/
-
-## Building a lightning-fast search engine
-### Clément Renault (Meilisearch 공동 창업자 & CTO)
+### Building a lightning-fast search engine
+> `17:45–18:30 · Main Stage`
+> 발표자: Clément Renault (Meilisearch 공동 창업자 & CTO)
+> [세션 링크](https://eurorust.eu/2025/talks/lightning-fast-search-engine/)
 
 Day 2의 **공식 행사 마지막 세션**이었습니다.
 Meilisearch가 프랑스 기반 회사라는 점은 이번에 처음 알게 되었는데,
