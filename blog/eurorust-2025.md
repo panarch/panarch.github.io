@@ -1,3 +1,5 @@
+# EuroRust 2025 참여 후기
+
 ## Day 1 – Thursday, Oct 9
 
 ### Are We Desktop Yet? Challenges and stories of writing a desktop environment in Rust
